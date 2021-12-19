@@ -1,0 +1,1478 @@
+@font-face {
+  font-family: "iran";
+  src: url(./fonts/DeloireBold-MVyzY) format("woff2"),
+    url(./fonts/irsans.woff) format("woff"),
+    url(./fonts/irsansb.woff) format("woff");
+}
+html,
+body {
+  height: 100%;
+  background-color: #f2f2f2 !important;
+  direction: rtl;
+  max-width: 100%;
+  font-family: "iran";
+  font-size: 15px;
+  overflow-x: hidden;
+}
+aside {
+  height: 100%;
+  width: 90px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+aside img {
+  margin: 0px auto;
+  padding: 20px;
+  border-right: 7px solid transparent;
+}
+aside img:hover:not(#logo),
+aside img.active {
+  cursor: pointer;
+  border-right: 7px solid #1abf63;
+}
+.flex__ContainerFluid {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+.flex__ContainerFluid .flex__Content {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding-right: 160px;
+  background-color: #f2f2f2;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device {
+  display: flex;
+  flex-direction: row;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .Text {
+  font-weight: 300;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .Text.Right {
+  margin-right: auto;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .Window__Rating {
+  height: 20px;
+  width: 70%;
+  max-width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  direction: ltr;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Device
+  .Window__Rating
+  .inner__WindowRating {
+  height: 18px;
+  width: 50%;
+  background-color: #6bcbfc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  align-items: center;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .window__Button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1abf63;
+  color: #fff;
+  margin-right: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT {
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT .blockBT__active {
+  background-color: #1abf63;
+  color: #fff;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Device
+  .blockBT
+  .blockBT__active.OffActive {
+  background-color: #fff;
+  color: #b4afaf;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Device
+  .blockBT
+  .blockBT__active.Wide {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT .blockBT__deactive {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Device
+  .blockBT
+  .blockBT__deactive.lightColor {
+  color: #d3d3d3;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Device
+  .blockBT
+  .blockBT__deactive.Off {
+  border: 1px solid #f2f2f2;
+  background-color: #cfcccc;
+  color: #999898;
+  border-radius: 20px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT.BoxDor {
+  border: 1px solid #f2f2f2;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT.Margin {
+  margin-right: -20px;
+  border: 1px solid #f2f2f2;
+}
+.flex__ContainerFluid .flex__Content .flex__Device .blockBT.MarginBlock {
+  margin-right: -40px;
+  border: 1px solid #f2f2f2;
+}
+.flex__ContainerFluid .flex__Content .flex__Device.Right {
+  margin-right: 25px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device.Margin {
+  bottom: 0;
+  margin-top: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device.Window {
+  margin-top: 30px;
+}
+.flex__ContainerFluid .flex__Content .flex__Device.Dor {
+  margin-top: -10px;
+  bottom: 0;
+}
+.flex__ContainerFluid .flex__Content .flex__Container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-bottom: 20px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Chart {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  width: 40%;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Chart .chart {
+  display: box;
+  box-sizing: border-box;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Chart .first__Row {
+  min-width: 100%;
+  display: inline-flex;
+  margin-top: 15px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .first__Row
+  .flex__Column {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 7px;
+  margin-top: -10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .first__Row
+  .flex__Column
+  div {
+  font-size: 12px;
+  color: #a4a4a4;
+  margin-top: -10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .first__Row
+  .Number_Size {
+  margin-right: auto;
+  font-size: 30px;
+  margin-top: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  align-items: center;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  div.Text {
+  margin-right: auto;
+  font-size: 15px -3;
+  color: #a4a4a4;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px -3;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  #Parent {
+  background-color: #fff !important;
+  color: #6aabc0;
+  padding: 7px 22px 7px 22px;
+  border-radius: 20px;
+  background: url("../images/Chevron_Right_1_.png") no-repeat left center;
+  background-position-x: 10px;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  #Parent:hover {
+  border-radius: 20px 20px 0 0;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  #Parent:hover
+  ul {
+  top: auto;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  li {
+  background: #fff;
+  padding: 5px 25px 5px 25px;
+  white-space: nowrap;
+  color: #a5a9be;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  li:hover {
+  background-color: #f1f1f1;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  li
+  ul {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  margin-right: -22px;
+  top: -20000px;
+  position: absolute;
+  border: 1px solid #f2f2f2;
+  border-radius: 0 0 10px 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Chart
+  .second__Row
+  ul
+  li
+  ul
+  li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Notification {
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  bottom: 0;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto {
+  margin-right: auto;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto
+  svg {
+  margin-right: -30px;
+  padding-top: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto
+  input[type="text"] {
+  background-color: #fff !important;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: url("../images/search.png") no-repeat left center;
+  background-position-x: 15px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto
+  input[type="text"]::-moz-placeholder {
+  color: #b4afaf;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto
+  input[type="text"]:-ms-input-placeholder {
+  color: #b4afaf;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Notification
+  .flex__Search
+  .RightAuto
+  input[type="text"]::placeholder {
+  color: #b4afaf;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Dropdown {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Dropdown ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px -3;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  ul
+  #Parent {
+  background-color: #fff !important;
+  color: #a4a4a4;
+  padding: 7px 22px 7px 22px;
+  border-radius: 20px;
+  background: url("../images/angleDown.png") no-repeat left center;
+  background-position-x: 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  ul
+  #Parent:hover {
+  border-radius: 20px 20px 0 0;
+  color: #6aabc0;
+  background: url("../images/Chevron_Right_1_.png") no-repeat left center;
+  background-position-x: 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  ul
+  #Parent:hover
+  ul {
+  top: auto;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Dropdown ul li {
+  background: #fff;
+  padding: 5px 13px 5px 13px;
+  white-space: nowrap;
+  color: #a5a9be;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Dropdown ul li ul {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 7px;
+  margin-right: -22px;
+  top: -20000px;
+  position: absolute;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  ul
+  li
+  ul
+  label {
+  cursor: pointer;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  ul
+  li
+  ul
+  li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  .InputNotification {
+  margin-right: 40px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Dropdown
+  .InputNotification
+  input[type="text"] {
+  padding: 7px 10px 7px 10px;
+  border-radius: 20px;
+  border: none;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px !important;
+  font-size: 14px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Table ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Table
+  ul:nth-child(even) {
+  background-color: #fff;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Table
+  ul:last-child {
+  border-bottom: none;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__Table ul li {
+  list-style: none;
+  padding: 25px;
+  width: 300px;
+  text-align: right;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__Table
+  ul
+  li#Parent {
+  background: url("../images/ARROW.png") no-repeat left center;
+  background-position-x: 200px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .pagination {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .pagination a {
+  color: #a4a4a4;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 4px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .pagination a.low {
+  font-size: 15px -5;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__TupleCard {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 30%;
+  margin: 5px;
+}
+.flex__ContainerFluid .flex__Content .flex__Container .flex__TupleCard.Display {
+  display: none;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 350px;
+  border-radius: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 4px;
+  padding: 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card.ReWrite__Height {
+  height: 200px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card.inner__First {
+  height: 100px;
+  margin-bottom: 14px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card.inner__Second {
+  height: 65px;
+  margin-top: 14px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card {
+  min-width: 100%;
+  display: inline-flex;
+  margin-top: 15px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .flex__Column {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 7px;
+  margin-top: -10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .flex__Column
+  div {
+  font-size: 15px -3;
+  color: #a4a4a4;
+  margin-top: -10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .flex__Column.Human__Gray {
+  color: #a4a4a4;
+  margin-right: 20px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .flex__Column.Human__Recognize {
+  color: #fe3442;
+  margin-right: 20px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .Dor__sُituation {
+  margin-right: auto;
+  margin-bottom: -10px;
+  margin-top: -15px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .Dor__sُituation
+  h4 {
+  margin-bottom: -10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .Number_Size {
+  margin-right: auto;
+  font-size: 30px;
+  margin-top: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Firtstflex__card
+  .Number_Size
+  span {
+  font-size: 15px -3;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Secondflex__Chart {
+  overflow: hidden;
+  min-width: 100%;
+  direction: ltr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  height: 30px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  div {
+  font-size: 15px -3;
+  font-weight: 300;
+  margin-right: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  svg {
+  margin-right: 5px;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Temperature__Circle {
+  background-color: #fab463;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Temperature__Text {
+  color: #fab463;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Moisture__Circle {
+  background-color: #1abf63;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Moisture__Text {
+  color: #1abf63 !important;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Battery__Circle {
+  background-color: #fe3442;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .Battery__Text {
+  color: #fe3442 !important;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text
+  .lightText {
+  color: gray;
+}
+.flex__ContainerFluid
+  .flex__Content
+  .flex__Container
+  .flex__TupleCard
+  .flex__Card
+  .Thirdflex__Text.Margin {
+  margin-right: auto;
+}
+.flex__Rate {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  bottom: 0;
+}
+.flex__Rate .block__Rate {
+  max-width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 20px;
+  border-radius: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.flex__Rate .block__Rate .Rectangle {
+  height: 25px;
+  width: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.flex__Rate .block__Rate .Humidity {
+  width: 15px;
+  height: 15px;
+  border-radius: 80% 0 55% 50%/55% 0 80% 50%;
+  transform: rotate(-45deg);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.flex__Rate .block__Rate .Light {
+  background-color: #e6e3e3;
+}
+.flex__Rate .block__Rate .Green {
+  background-color: #1abf63;
+}
+.flex__Rate .block__Rate .Orange {
+  background-color: #fab463;
+}
+.flex__Rate .block__Rate .Pink {
+  background-color: #f18184;
+}
+form {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 150px;
+  font-size: 15px -2;
+}
+form .FirstRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form .FirstRow .Submit__Button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1abf63;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: auto;
+}
+form div {
+  margin-top: 20px;
+}
+form .form__Section {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #f3f1f1;
+  padding: 20px;
+  align-items: center;
+}
+form .form__Section.LowInput input[type="text"] {
+  width: 60px;
+  margin-left: 2px;
+  margin-top: 20px;
+}
+form .form__Section .form__Checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form .form__Section .form__Checkbox.Top {
+  margin-top: -2px;
+}
+form .form__Section label {
+  margin-left: 10px;
+}
+form .form__Section label.MarginTop {
+  margin-top: 20px;
+}
+form .form__Section input[type="text"] {
+  border-radius: 50px;
+  border: 1px solid #f3f1f1;
+  width: 500px;
+  padding: 5px;
+}
+form .form__Section input[type="checkbox"] {
+  background-color: #fff;
+  border: 1px solid #cacece;
+  padding: 9px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+}
+form .form__WaterSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa !important;
+  border-radius: 10px;
+  border: 1px solid #f3f1f1;
+  padding: 20px;
+}
+form .form__WaterSection h4 {
+  margin-right: 40px;
+  margin-bottom: -10px;
+}
+form .form__WaterSection .form__WaterSection {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+form .form__WaterSection .form__Section {
+  background-color: none;
+  padding: 0;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+form .form__WaterSection .form__Section.LowSize {
+  font-size: 15px -3;
+}
+@media screen and (max-width: 375px) {
+  aside {
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -10px;
+  }
+  aside img {
+    margin-bottom: auto;
+    border-bottom: 5px solid transparent;
+    border-right: none;
+  }
+  aside img:hover:not(#logo),
+  aside img.active {
+    border-bottom: 7px solid #1abf63;
+    border-right: none;
+  }
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__TupleCard {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card
+    .flex__Device.Margin {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex__ContainerFluid .flex__Content form {
+    width: 100%;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow h4 {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow .Submit__Button {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section input[type="text"] {
+    width: 100px;
+    margin-top: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section .form__Checkbox {
+    margin-top: -3px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__Section
+    .form__Checkbox.Right {
+    margin-right: -12px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__WaterSection h4 {
+    margin-right: -1px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section
+    input[type="text"] {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 375px) {
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content form {
+    width: 100%;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow h4 {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow .Submit__Button {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section input[type="text"] {
+    width: 100px;
+    margin-top: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section .form__Checkbox {
+    margin-top: -3px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__Section
+    .form__Checkbox.Right {
+    margin-right: -12px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__WaterSection h4 {
+    margin-right: -1px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section
+    input[type="text"] {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section
+    .form__Checkbox.Top
+    input[type="text"] {
+    margin-bottom: -20px !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 500px) {
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content form {
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow h4 {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .FirstRow .Submit__Button {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  .flex__ContainerFluid .flex__Content form .form__Section input[type="text"] {
+    width: 100px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section.Column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section
+    input[type="text"] {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    form
+    .form__WaterSection
+    .form__Section
+    .form__Checkbox.Top
+    input[type="text"] {
+    margin-bottom: -12px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 375px) {
+  aside {
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -10px;
+  }
+  aside img {
+    margin-bottom: auto;
+    border-bottom: 5px solid transparent;
+    border-right: none;
+  }
+  aside img:hover:not(#logo),
+  aside img.active {
+    border-bottom: 7px solid #1abf63;
+    border-right: none;
+  }
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__TupleCard {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+  aside {
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -10px;
+    margin-left: -10px !important;
+  }
+  aside img {
+    margin-bottom: auto;
+    border-bottom: 5px solid transparent;
+    border-right: none;
+  }
+  aside img:hover:not(#logo),
+  aside img.active {
+    border-bottom: 7px solid #1abf63;
+    border-right: none;
+  }
+  .flex__ContainerFluid {
+    margin: 10px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: -10px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container {
+    width: 100% !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+    max-width: 100%;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__TupleCard {
+    width: 50% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    max-width: 100%;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard.Display {
+    display: block;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card {
+    max-width: 100%;
+    margin: 10px;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card.Longer {
+    height: 350px !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card.DisplayNone {
+    display: none !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card
+    .Thirdflex__Text.MarginAuto {
+    margin-top: auto !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__TupleCard
+    .flex__Card
+    .flex__Rate.MarginBottom {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container {
+    width: 100%;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__Chart {
+    width: 90% !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__Chart
+    .first__Row
+    .Number_Size {
+    font-size: 30px;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__Notification {
+    overflow: hidden !important;
+    width: 90% !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__Notification
+    .flex__Dropdown
+    .InputNotification {
+    margin-right: auto;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__Notification
+    .flex__Table {
+    width: 100% !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__Chart {
+    width: 80% !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__Chart
+    .first__Row
+    .Number_Size {
+    font-size: 30px;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Notification {
+    width: 80% !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Notification .flex__Table {
+    width: 100% !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .flex__ContainerFluid {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .flex__ContainerFluid .flex__Content {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Container .flex__Chart {
+    width: 45% !important;
+  }
+  .flex__ContainerFluid
+    .flex__Content
+    .flex__Container
+    .flex__Chart
+    .first__Row
+    .Number_Size {
+    font-size: 30px;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Notification {
+    width: 90% !important;
+  }
+  .flex__ContainerFluid .flex__Content .flex__Notification .flex__Table {
+    width: 100% !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}

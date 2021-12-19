@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        
+</head>
+<body>
+        <!--******************************SideBarSection******************************-->
+        <aside>
+                <img class="d-block" src="images/ecology.png" /> 
+                        
+                <img class="d-block" src="images/chartIcon.png" />
+                        
+                <img class="d-block" src="images/analytics.png" /> 
+
+                <img class="d-block" src="images/setting.png" />
+                                                                
+
+        </aside>
+         <!--******************************ContainerSection******************************-->
+        <div class="flex__ContainerFluid">
+                
+                <!--******************************BodySection******************************-->
+                <div class="flex__Content">
+
+                         <!--******************************BodyContent******************************-->
+
+                         <form>
+                                <div class="FirstRow">
+                                        <h4>تنظیمات هشدار و خودکارسازی مدیریت گلخانه</h4>
+                                        
+                                        <div class="Submit__Button">ذخیره</div>
+                
+                                </div>
+                                <div> در این قسمت می توانید تنظیمات مربوط به دریافت هشدار و مقادیر دلخواه جهت اجرای خودکار دستورات کنترلی را وارد نمایید.</div>
+
+                                 <!--******************************form:FirstSection******************************-->
+
+                                 
+                                <div class="form__Section">
+                                                
+                                        <label>شماره تلفن همراه را برای دریافت هشدار وارد کنید</label>
+                                        <input type="text"> 
+                                </div>
+                                
+                                
+                               
+
+                                 <!--******************************form:SecondSection******************************-->
+                                 
+                                <div class="form__Section">
+
+                                        <div class="form__Checkbox">
+                                                <input type="checkbox" id="Gajet">
+                                                <label for="Gajet">عدم ارتباط گجت گلخانه با پلتفرم</label>
+                                                             
+                                        </div>
+                                        
+                                        <div class="form__Checkbox Right">
+                                                <input type="checkbox" id="Recognize">
+                                                <label for="Recognize">تشخیص حضور فرد در گلخانه</label>
+                                        </div>
+                                </div>
+
+                                 <!--******************************form:ThirdSection******************************-->
+
+                              
+
+                                <div class="form__Section LowInput">
+                                        <div class="form__Checkbox">
+                                                <input type="checkbox" id="Water">
+                                                <label for="Water">اتمام آب مخزن در صورت رسیدن</label>
+                                                    
+        
+                                        </div>
+                                        <input type="text">
+                                               
+                                </div>
+
+                                 <!--******************************form:ForthSection******************************-->
+
+                                <div class="form__Section LowInput">
+                                        <div class="form__Checkbox">
+                                                <input type="checkbox" id="Battery">
+                                                <label for="Battery">اتمام شارژ باتری در صورت رسیدن</label>
+                                                       
+                                        </div>
+                                        <input type="text">
+                                                    
+                                </div>
+
+                                <!--******************************form:FifthSection******************************-->
+
+                                <div class="form__WaterSection"> 
+                                        <h4>نیاز به آبیاری</h4>
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="Moisture">
+                                                        <label for="Moisture">   روشن شدن سیستم آبیاری در صورت رسیدن رطوبت خاک به</label>
+                                                </div>
+                                                <input type="text">
+                                                <label class="MarginTop">  و سپس خاموش شدن سیستم آبیاری در صورت رسیدن رطوبت خاک به</label>
+                                                <input type="text">
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="NotificationOn">
+                                                        <label for="NotificationOn">دریافت هشدار عدم روشن شدن سیستم در مدت زمان</label>
+
+                                                </div>
+
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+                                                </div>
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="NotificationOff">
+                                                        <label for="NotificationOff">دریافت هشدار عدم خاموش شدن سیستم در مدت زمان</label>
+
+                                                </div>
+
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+
+                                                </div>
+                                                
+                                        </div>
+                                       
+                                </div>
+
+
+                                <!--******************************form:SixthSection******************************-->
+
+                                <div class="form__WaterSection"> 
+                                        <h4>نیاز به گرمایش</h4>
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="Hot">
+                                                        <label for="Hot">روشن شدن سیستم گرمایش در سورت رسیدن دمای محیط به زیر </label>
+                                                </div>
+                                                <input type="text">
+                                                <label class="MarginTop"> درجه و سپس خاموش شدن سیستم گرمایش در صورت رسیدن دمای محیط به بالای</label>
+
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>درجه</div>
+
+                                                </div>
+                                                
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="HotNotificationOn">
+                                                        <label for="HotNotificationOn">دریافت هشدار عدم روشن شدن سیستم در مدت زمان</label>
+
+                                                </div>
+                                                
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+
+                                                </div>
+                                                
+
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="HotNotificationOff">
+                                                        <label for="HotNotificationOn">دریافت هشدار عدم خاموش شدن سیستم در مدت زمان</label>
+
+                                                </div>
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                                <!--******************************form:SeventhSection******************************-->
+
+                                <div class="form__WaterSection"> 
+                                        <h4>نیاز به سرمایش</h4>
+                                        <div class="form__Section Column LowInput LowSize">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="Cool">
+                                                        <label for="Cool">روشن شدن سیستم سرمایش در صورت رسیدن دمای محیط به بالای </label>
+                                                        
+
+                                                </div>
+                                                <input type="text">
+                                                <label class="MarginTop"> درجه و سپس باز شدن پنجره به میزان </label>
+                                                <input type="text">
+                                                <label class="MarginTop">  و سپس خاموش شدن سیستم سرمایش در صورت رسیدن دمای محیط به زیر</label>
+                                                <input type="text">
+                                                <label class="MarginTop"> درجه و سپس بسته شدن پنجره به میزان</label>
+                                                <input type="text">
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="CoolNotificationOn">
+                                                        <label for="CoolNotificationOn">دریافت هشدار عدم روشن شدن سیستم در مدت زمان</label>     
+                                                </div>
+
+                                                <div class="form__Checkbox Top">
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+                                                </div>
+                                        </div>
+
+                                        <div class="form__Section LowInput">
+                                                <div class="form__Checkbox">
+                                                        <input type="checkbox" id="HotNotificationOff">
+                                                        <label for="HotNotificationOff">دریافت هشدار عدم خاموش شدن سیستم در مدت زمان</label>
+                                                </div>
+                                                <div class="form__Checkbox Top">
+                                                         
+                                                        <input type="text">
+                                                        <div>ثانیه</div>
+
+                                                </div>       
+
+                                        </div>
+    
+                                </div>
+                         </form>   
+
+                </div>
+
+        </div>
+
+       
+      
+        
+</body>
+</html>

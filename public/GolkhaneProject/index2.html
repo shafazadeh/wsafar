@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css"/> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--******************************SideBarSection******************************-->
+
+    <aside>
+      <img class="d-block" src="images/ecology.png" />
+
+      <img class="d-block" src="images/chartIcon.png" />
+
+      <img class="d-block" src="images/analytics.png" />
+
+      <img class="d-block" src="images/setting.png" />
+    </aside>
+    <!--******************************ContainerSection******************************-->
+    <div class="flex__ContainerFluid">
+      <!--******************************BodySection******************************-->
+      <div class="flex__Content">
+        <!--******************************DeviceActiveSection******************************-->
+
+        <div class="flex__Device Right">
+          <div class="blockBT">
+            <div class="blockBT__active">دستگاه یک</div>
+            <div class="blockBT__deactive">دستگاه دو</div>
+          </div>
+        </div>
+
+        <!--******************************GridSection******************************-->
+        <div class="flex__Container">
+          <!--******************************FirstChart******************************-->
+          <div class="flex__Chart">
+            <div class="first__Row">
+              <img class="d-block w-100" src="images/tempratureIcon.png" />
+
+              <div class="flex__Column">
+                <h4>دمای محیط</h4>
+                <div>Temperature</div>
+              </div>
+
+              <div class="Number_Size"><b>40</b></div>
+            </div>
+
+            <div class="second__Row">
+              <ul>
+                <li id="Parent">
+                 نحوه نمایش داده ها
+
+                  <ul class="dropdown">
+                    <li>امروز</li>
+                    <li>انتخاب بازه تاریخی</li>
+    
+                  </ul>
+                </li>
+              </ul>
+              <div class="Text">امروز 20 اردیبهشت 99</div>
+            </div>
+
+            <div class="chart">
+              <!-- نمودار در این قسمت وارد شود -->
+            </div>
+          </div>
+
+          <!--******************************SecondChart******************************-->
+
+          <div class="flex__Chart">
+            <div class="first__Row">
+              <img class="d-block w-100" src="images/humidityIcon.png" />
+
+              <div class="flex__Column">
+                <h4>رطوبت محیط</h4>
+                <div>Humidity</div>
+              </div>
+              <div class="Number_Size"><b>90%</b></div>
+            </div>
+
+            <div class="second__Row">
+              <ul>
+                <li id="Parent">
+                 نحوه نمایش داده ها
+
+                  <ul class="dropdown">
+                    <li>امروز</li>
+                    <li>انتخاب بازه تاریخی</li>
+    
+                  </ul>
+                </li>
+              </ul>
+              <div class="Text">بهمن 99 - 3 اسفند 25 99</div>
+            </div>
+
+            <div class="chart">
+              <!-- نمودار در این قسمت وارد شود -->
+            </div>
+          </div>
+
+          <!--******************************ThirdChart******************************-->
+
+          <div class="flex__Chart">
+            <div class="first__Row">
+              <img class="d-block w-100" src="images/saltIcon.png" />
+
+              <div class="flex__Column">
+                <h4>شوری خاک</h4>
+                <div>salt</div>
+              </div>
+              <div class="Number_Size"><b>30%</b></div>
+            </div>
+
+            <div class="second__Row">
+              <ul>
+                <li id="Parent">
+                 نحوه نمایش داده ها
+
+                  <ul class="dropdown">
+                    <li>امروز</li>
+                    <li>انتخاب بازه تاریخی</li>
+    
+                  </ul>
+                </li>
+              </ul>
+              <div class="Text">بهمن 99 - 3 اسفند 25 99</div>
+            </div>
+
+            <div class="chart">
+              <!-- نمودار در این قسمت وارد شود -->
+            </div>
+          </div>
+
+          <!--******************************ForthChart******************************-->
+
+          <div class="flex__Chart">
+            <div class="first__Row">
+              <img class="d-block w-100" src="images/waterIcon.png" />
+              <div class="flex__Column">
+                <h4>سطح آب</h4>
+                <div>water level</div>
+              </div>
+              <div class="Number_Size"><b>10%</b></div>
+            </div>
+
+            <div class="second__Row">
+              <ul>
+                <li id="Parent">
+                 نحوه نمایش داده ها
+
+                  <ul class="dropdown">
+                    <li>امروز</li>
+                    <li>انتخاب بازه تاریخی</li>
+    
+                  </ul>
+                </li>
+              </ul>
+           
+              <div class="Text">بهمن 99 - 3 اسفند 25 99</div>
+            </div>
+
+            <div class="chart">
+              <!-- نمودار در این قسمت وارد شود -->
+            </div>
+          </div>
+
+          <!--******************************Search Section******************************-->
+
+          <div class="flex__Notification">
+            <div class="flex__Search">
+              <div><b>تاریخچه هشدارها</b></div>
+              <div class="RightAuto">
+                <input type="text" placeholder="جستجو" />
+               
+                </svg>
+              </div>
+            </div>
+
+            <!-- ******************************************* -->
+
+            <div class="flex__Dropdown">
+              <ul>
+                <li id="Parent">
+                  انتخاب هشدار
+
+                  <ul class="dropdown">
+                    <li>
+                      <input type="checkbox" id="Water" />
+                      <label for="Water">سطح آب</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="Battery" />
+                      <label for="Battery">باتری</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="Moisture" />
+                      <label for="Moisture">رطوبت خاک</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="Environment" />
+                      <label for="Environment">رطوبت محیط</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="Temperature" />
+                      <label for="Temperature">سطح آب</label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="InputNotification">
+                <input type="text" />
+              </div>
+              
+            </div>
+
+            <!-- ******************************************* -->
+
+            <div class="flex__Table">
+
+              <ul>
+                <li id="Parent"><b>هشدار</b> 
+                </li>
+                <li><b>سنسور</b></li>
+                <li><b>مقدار متغیر</b></li>
+                <li><b>زمان وقوع</b></li>
+
+              </ul>
+
+              <ul>
+                <li>سطح آب مخزن کاهش یافته است</li>
+                <li>سطح آب</li>
+                <li>10%</li>
+                <li>امروز 10 اسفند 99 | 12:42</li>
+              </ul>
+
+              <ul>
+                <li>شارژ باتری رو  به اتمام است</li>
+                <li>باتری</li>
+                <li>20%</li>
+                <li>سه شنبه 14 مهر 99 | 12:20</li>
+              </ul>
+
+              <ul>
+                <li>رطوبت محیط کم است</li>
+                <li>رطوبت محیط</li>
+                <li>12%</li>
+                <li>سه شنبه 10 شهریور 99 | 15:10</li>
+              </ul>
+
+              <ul>
+                <li>میزان رطوبت خاک کم است</li>
+                <li>رطوبت خاک</li>
+                <li>10%</li>
+                <li>سه شنبه 10 شهریور 99 | 15:10</li>
+              </ul>
+              
+            </div>
+
+            <!-- ******************************************* -->
+
+            <div class="pagination">
+              <a href="#">&raquo;</a>
+              <a href="#" class="low">❯</a>
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#" class="low">❮</a>
+              <a href="#">&laquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

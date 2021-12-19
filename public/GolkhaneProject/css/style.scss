@@ -1,0 +1,702 @@
+
+$backgroundColor:rgb(242,242,242);
+$black:rgb(0,0,0);
+$white:rgb(255,255,255);
+$green:#1abf63;
+$darkWhite:rgb(243, 239, 239);
+$gray:#FAFAFA;
+$darkGray:gray;
+$lightGray:rgb(180, 175, 175);
+$buttonColor:lightgray;
+$buttonBackground:rgb(207, 204, 204);
+$offColor:rgb(153, 152, 152);
+$borderCart:#ddd;
+// $recGray:#EFEFEF;
+$recGray:rgb(230, 227, 227);
+$orange:#FAB463;
+$darkPink:#F18184;
+$red:#FE3442;
+$blue:#6BCBFC;
+$lightBlue:#6AABC0;
+$darkBlue:#B2B7C1;
+$dropdownColor:#f1f1f1;
+$lightBlack:#A4A4A4;
+$fontSize:15px;
+
+
+@font-face {
+  font-family: 'iran';
+  src: url(./fonts/DeloireBold-MVyzY) format('woff2'),
+       url(./fonts/irsans.woff) format('woff'),
+       url(./fonts/irsansb.woff) format('woff');
+}
+
+// @font-face {
+//   font-family: 'Roboto Mono', monospace;
+//   src: url(./fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
+//        url(./fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
+//        url(./fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'Roboto Mono', monospace;
+//   src: url(./fonts/roboto-mono-v12-latin-700italic.woff2) format('woff2'),
+//        url(./fonts/roboto-mono-v12-latin-700italic.woff) format('woff'),
+//        url(./fonts/roboto-mono-v12-latin-700italic.ttf) format('truetype');
+//   font-weight: 700;
+//   font-style: italic;
+// }
+
+
+@import "_global.scss";
+
+
+
+
+
+
+
+
+
+// ********** Responsive for sidebar Section the Third pages for withs less than 400px **********
+@media screen and (max-width: 375px) {
+  aside {
+    left:0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -10px;
+  
+    img{
+      margin-bottom: auto;
+      border-bottom:5px solid transparent; 
+      border-right: none;
+      
+      &:hover:not(#logo), &.active {
+
+        border-bottom: 7px solid $green;
+        border-right: none;
+
+      }
+    }
+  }
+
+// ********** BodyContent Responsive **********
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+  
+  
+      // ********** FisrtPage Style Responsive **********
+  
+      .flex__Container{
+        width: 100% !important;
+        margin:0px !important;
+        padding:0px !important;
+       
+        .flex__TupleCard{
+          width: 100% !important ;
+          margin:0px !important;
+          padding:0px !important;
+
+          .flex__Card{
+            .flex__Device{
+              &.Margin{
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+         
+        }
+      }
+  
+  
+       // ********** ThirdPage Style Responsive **********
+    
+   
+      // ********** form Style Responsive **********
+
+      form{
+       
+        width: 100%;
+        max-width: 100%;
+        font-size: 10px;
+  
+        .FirstRow{
+          h4{
+            font-size: 12px;
+            padding-top: 10px;
+          }
+          .Submit__Button{
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+          }
+      
+        }
+
+
+        .form__Section{
+          display: flex ;
+          flex-direction: column ;
+          justify-content: flex-start;
+
+          input[type="text"]{
+            width: 100px ;
+            margin-top: 10px;
+          }
+
+          .form__Checkbox{
+            margin-top:-3px;
+           
+            &.Right{
+                margin-right:-12px;
+            }
+          
+ 
+          }
+
+        }
+
+        .form__WaterSection{
+          h4{
+            margin-right: -1px;
+          }
+          .form__Section{
+            input[type="text"]{
+              margin-bottom: 5px;
+              margin-top: 5px;
+            
+            }
+
+           
+          }
+        }
+
+        }
+   
+    }
+    
+  }
+
+
+}
+
+//***********************************************
+
+@media screen and(max-width:500px) and (min-width:375px){
+
+
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+
+      form{
+       
+        width: 100%;
+        max-width: 100%;
+        font-size: 10px;
+    
+        .FirstRow{
+          h4{
+            font-size: 12px;
+            padding-top: 10px;
+          }
+          .Submit__Button{
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+          }
+      
+        }
+    
+    
+        .form__Section{
+          display: flex ;
+          flex-direction: column ;
+          justify-content: flex-start !important;
+    
+          input[type="text"]{
+            width: 100px ;
+            margin-top: 10px;
+          }
+    
+          .form__Checkbox{
+            margin-top:-3px;
+            &.Right{
+              margin-right: -12px;
+            }
+    
+          }
+  
+        }
+    
+    
+        .form__WaterSection{
+          h4{
+            margin-right: -1px;
+          }
+          .form__Section{
+            input[type="text"]{
+              margin-bottom: 5px;
+              margin-top: 5px;
+            
+            }
+    
+            .form__Checkbox{
+
+             
+             &.Top{
+               input[type="text"]{
+                 margin-bottom:-20px !important;
+               }
+             }
+            }
+          }
+        }
+    
+        }
+
+    }
+
+  }
+
+}
+
+
+
+
+@media screen and(max-width:1200px) and (min-width:500px){
+
+
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+
+
+      
+        // ********** form Style Responsive **********
+        form{
+       
+          width: 100%;
+          max-width: 100%;
+          font-size: 12px;
+    
+          .FirstRow{
+            h4{
+              font-size: 12px;
+              padding-top: 10px;
+            }
+            .Submit__Button{
+              padding-left: 7px;
+              padding-right: 7px;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              margin-bottom: 10px;
+            }
+        
+          }
+  
+  
+          .form__Section{
+            // display: flex ;
+            // flex-direction: column ;
+  
+            input[type="text"]{
+              width: 100px ;
+            }
+  
+       
+           
+          }
+  
+  
+          .form__WaterSection{
+           
+            .form__Section{
+  
+             
+  
+              &.Column{
+                display: flex;
+                flex-direction: column;
+               
+
+                
+                
+              }
+              input[type="text"]{
+                margin-bottom: 5px;
+                margin-top: 5px;
+              
+              }
+  
+              .form__Checkbox{
+               
+                &.Top{
+                  input[type="text"]{
+                    margin-bottom: -12px;
+                  }
+                  
+                }
+              }
+            }
+          }
+  
+      
+          }
+
+
+
+
+    }
+
+
+
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 700px) and (min-width:375px){
+ 
+    aside {
+      left:0;
+      top:0;
+      right:0;
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-top: -10px;
+      
+    
+  
+      img{
+        // margin:20px;
+        
+        margin-bottom: auto;
+        border-bottom:5px solid transparent; 
+        border-right: none;
+       
+        
+        &:hover:not(#logo), &.active {
+  
+          border-bottom: 7px solid $green;
+          border-right: none;
+  
+        }
+      }
+    }
+   
+
+// ********** BodyContent Responsive **********
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+  
+  
+      // ********** FisrtPage Style Responsive **********
+  
+      .flex__Container{
+        width: 100% !important;
+        margin:0px !important;
+        padding:0px !important;
+       
+        .flex__TupleCard{
+          width: 100% !important ;
+          margin:0px !important;
+          padding:0px !important;
+
+          .flex__Card{
+            margin-right:25px;
+          }
+         
+        }
+      }
+  
+  
+       // ********** ThirdPage Style Responsive **********
+    
+   
+      // ********** form Style Responsive **********
+      
+     
+    
+    }
+    
+  }
+
+
+}
+// ********** Responsive for body Content the Third pages for withs less than 400px **********
+
+@media screen and (max-width:1200px) and (min-width:700px){
+
+  aside {
+    left:0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -10px;
+    margin-left: -10px !important;
+  
+
+    img{
+      // margin:20px;
+      margin-bottom: auto;
+      border-bottom:5px solid transparent; 
+      border-right: none;
+      
+      &:hover:not(#logo), &.active {
+
+        border-bottom: 7px solid $green;
+        border-right: none;
+
+      }
+    }
+  }
+
+// ********** BodyContent Responsive **********
+
+  .flex__ContainerFluid{
+    margin: 10px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:-10px !important;
+      padding: 5px !important;
+  
+  
+      // ********** FisrtPage Style Responsive **********
+  
+      .flex__Container{
+        width: 100% !important;
+        margin-right:0px !important;
+        padding:0px !important;
+        max-width: 100%;
+        
+       
+        .flex__TupleCard{
+          width:50% !important ;
+          margin:0px !important;
+          padding:0px !important;
+          max-width: 100%;
+
+          &.Display{
+            display: block;
+          }
+
+
+          .flex__Card{
+            max-width: 100%;
+            margin:10px;
+           
+            &.Longer{
+                height: 350px !important;
+              }
+
+          
+            &.DisplayNone{
+                display: none !important;
+            }
+
+
+          
+
+
+          .Thirdflex__Text{
+            &.MarginAuto{
+              // bottom: 0px !important;
+              margin-top: auto !important;
+             
+            } 
+          }
+          
+          
+          .flex__Rate{
+            &.MarginBottom{
+              margin-bottom: 25px;
+            }
+          }
+          }
+         
+        }
+      }
+  
+  
+       // ********** ThirdPage Style Responsive **********
+    
+   
+
+      
+    }
+    
+  }
+
+ 
+}
+
+
+// ********** Responsive for body Content the Second pages for withs less than 400px **********
+// @media screen and (max-width:360px){
+  
+// }
+
+@media screen and (max-width:600px){
+
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+
+      .flex__Container{
+        width: 100%;
+        .flex__Chart{
+          width:90% !important;
+
+          .first__Row{
+            .Number_Size{
+              font-size: $fontSize + 15;
+            }
+          }
+        }
+
+        .flex__Notification{
+          overflow: hidden !important;
+          width:90% !important;
+
+          .flex__Dropdown{
+            .InputNotification{
+              margin-right:auto;
+            }
+
+          }
+         
+          .flex__Table{
+            width: 100% !important;
+            overflow-x: auto;
+            overflow-y:hidden ;  
+            
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media  screen and(min-width:600px) and (max-width:800px) {
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+
+      .flex__Container{
+        .flex__Chart{
+          width:80% !important;
+          .first__Row{
+            .Number_Size{
+              font-size: $fontSize + 15;
+            }
+          }
+        }
+      }
+
+      .flex__Notification{
+        width: 80% !important;
+        // overflow-y: hidden;
+        // white-space: wrap;
+        .flex__Table{
+          width: 100% !important;
+          overflow-x: auto;
+          overflow-y:hidden 
+          // overflow-y: hidden;
+         
+         
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media screen and(min-width:800px) and (max-width:1200px) {
+
+  .flex__ContainerFluid{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .flex__Content{
+      margin:5px !important;
+      padding: 5px !important;
+
+      .flex__Container{
+        .flex__Chart{
+          width:45% !important;
+          .first__Row{
+            .Number_Size{
+              font-size: $fontSize + 15;
+            }
+          }
+        }
+      }
+
+      .flex__Notification{
+        width: 90% !important;
+        // overflow-y: hidden;
+        // white-space: wrap;
+        .flex__Table{
+          width: 100% !important;
+          overflow-x: auto;
+          overflow-y:hidden 
+          // overflow-y: hidden;
+         
+         
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+
+

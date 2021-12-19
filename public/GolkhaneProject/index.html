@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        
+</head>
+<body>
+
+          <!--******************************SideBarSection******************************-->
+
+        
+        <aside>
+   
+                <img class="d-block" src="images/ecology.png" /> 
+                        
+                <img class="d-block" src="images/chartIcon.png" />
+                        
+                <img class="d-block" src="images/analytics.png" /> 
+
+                <img class="d-block" src="images/setting.png" />      
+
+        </aside>
+         <!--******************************ContainerSection******************************-->
+        <div class="flex__ContainerFluid">
+              
+                
+                <!--******************************BodySection******************************-->
+                <div class="flex__Content">
+                         <!--******************************DeviceActiveSection******************************-->
+
+                         <div class="flex__Device Right">
+                                <div class="blockBT">
+                                        <div class="blockBT__active">دستگاه یک</div>
+                                        <div class="blockBT__deactive">دستگاه دو</div>  
+                                 </div>
+
+                         </div>
+                        
+                         
+                         <!--******************************GridSection******************************-->
+                         <div class="flex__Container" >
+                                 <!--******************************First: flex__Card******************************-->
+                                 <div class="flex__TupleCard">
+                                        <div class="flex__Card">
+                                                       <div class="Firtstflex__card">
+                                                              <img class="d-block w-100" src="images/tempratureIcon.png">
+                                                                       
+                                                               <div class="flex__Column">
+                                                                       <h4>دمای محیط</h4>
+                                                                       <div>Temperature</div>
+                                                               </div>
+                                                                       
+                                                       </div>
+                                                       <!-- **************Row*************** -->
+                       
+                                                       <div class="Secondflex__Chart" >
+                                                               <!-- نمودار در این تگ وارد شود -->
+                                                               <img class="d-block"  src="./images/chart.png">
+                                                              
+                                                       </div>
+               
+                                                        <!-- **************Row*************** -->
+               
+                                                       <div class="Thirdflex__Text">
+                                                                <div class="Circle Temperature__Circle"></div>
+                                                                <div class="Temperature__Text"><b>دمای گلخانه در حال زیاد شدن است</b></div>
+                                                             
+                                                       </div>
+               
+                                                        <!-- **************Row*************** -->
+                                                       
+                                                        <div class="flex__Device Margin">
+                                                                <div class="Text" style="font-size:12px; margin-right: 5px;"><b>هیتر</b></div>
+                                                                <div  class="blockBT Margin" style="margin-right:-3px">
+                                                                        <div class="blockBT__active" style="font-size: 12px;">روشن</div>
+                                                                        <div class="blockBT__deactive lightColor"  style="font-size: 12px;">خاموش</div>  
+                                                                </div>
+
+
+                                                                <div class="Text Right" style="font-size:12px"><b>فن</b></div>
+                                                                <div  class="blockBT Margin" >
+                                                                        <div class="blockBT__active OffActive" >روشن</div>
+                                                                        <div class="blockBT__deactive Off ">خاموش</div>  
+                                                                </div>
+                                                        </div>
+               
+                                        </div>
+                     
+                                 </div>
+
+                      
+                          <!--******************************Second: flex__Card******************************-->
+                          <div class="flex__TupleCard">
+                                  
+                          <div class="flex__Card">
+                                        <div class="Firtstflex__card">
+                                                <img class="d-block w-100" src="images/moistureIcon.png">
+                                                      
+                                                <div class="flex__Column">
+                                                        <h4>رطوبت خاک</h4>
+                                                        <div>Soil Moisture </div>
+                                                </div>
+                                                        
+                                        </div>
+
+                                        <!-- **************Row*************** -->
+        
+                                        <div class="Secondflex__Chart">
+                                                   <!-- نمودار در این تگ وارد شود -->
+                                                   <img class="d-block"  src="./images/chart.png">
+                
+                                        </div>
+
+
+                                        <!-- **************Row*************** -->
+                                        <div class="Thirdflex__Text" style="font-size:12px">
+                                             
+                                                <div class="Circle Moisture__Circle"></div>     
+                                                <div class="Moisture__Text" ><b>میزان رطوبت خاک مناسب است</b></div>
+                                            
+                                               
+                                        </div>
+
+                                        <!-- **************Row*************** -->
+                                             
+                                        <div class="flex__Device Margin">
+                                                <div class="Text"><b>واترپمپ</b></div>
+                                                <div  class="blockBT MarginBlock">
+                                                        <div class="blockBT__active">روشن</div>
+                                                        <div class="blockBT__deactive lightColor">خاموش</div>  
+                                                </div>
+                                        </div>
+                                        
+                         </div>
+
+                          </div>
+
+
+                          <!--******************************Third: flex__Card******************************-->
+                          <div class="flex__TupleCard">
+                                <div class="flex__Card">
+                                                <div class="Firtstflex__card">
+                                                        <img class="d-block w-100" src="images/lightIcon.png">
+                                                              
+                                                        <div class="flex__Column">
+                                                                <h4>نور محیط</h4>
+                                                                <div>Light</div>
+                                                        </div>
+                                                                
+                                                </div>
+                                                <!-- **************Row*************** -->
+                
+                                                <div class="Secondflex__Chart">
+                                                         <!-- نمودار در این تگ وارد شود -->
+                                                         <img class="d-block"   src="./images/chart.png">
+                
+                                                </div>
+
+                                                 <!-- **************Row*************** -->
+
+                                                <div class="Thirdflex__Text">
+                                                        <!-- جهت اینکه با بقیه ارتفاع یکسان شود این تگ اضافه شد. -->
+                                                           
+        
+                                                </div>
+        
+                                                <!-- **************Row*************** -->
+                                           
+                                                <div class="flex__Device Margin">
+                                                        <div class="Text"><b>روشنایی</b></div>
+                                                        <div  class="blockBT MarginBlock">
+                                                                <div class="blockBT__active">روشن</div>
+                                                                <div class="blockBT__deactive lightColor">خاموش</div>  
+                                                        </div>
+                
+                                                </div>
+                                                      
+                                </div>
+
+                          </div>
+
+                          
+                          
+
+                        <!--******************************Forth: flex__Card******************************-->
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card ReWrite__Height Longer">
+                                                <div class="Firtstflex__card">
+                                                        <img class="d-block w-100" src="images/batteryIcon.png">
+                                                
+                                                        <div class="flex__Column">
+                                                                <h4 >وضعیت شارژ</h4>
+                                                                <div>Battery Charge</div>
+                                                        </div>
+                                                        <div class="Number_Size"><b>90%</b></div>
+                                                                
+                                                </div>
+        
+                                                 <!-- **************Row*************** -->
+        
+                                                <div class="Thirdflex__Text MarginAuto">
+                                                    
+                                                        <div class="Circle Battery__Circle"></div>            
+                                                        <div class="Battery__Text"><b>میزان شارژ باتری رو به اتمام است</b></div>
+                                                    
+        
+                                                </div>
+        
+                                                 <!-- **************Row*************** -->
+                
+                                                <div class="flex__Rate MarginBottom">
+                                                        <div class="block__Rate">
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Green"></div>
+                                                                <div class="Rectangle Green"></div>
+                                                                <div class="Rectangle Green"></div>
+                                                                <div class="Rectangle Green"></div>
+                                                                <div class="Rectangle Orange"></div>
+                                                                <div class="Rectangle Orange"></div>
+                                                                <div class="Rectangle Orange"></div>
+                                                                <div class="Rectangle Pink"></div>
+                                                                <div class="Rectangle Pink"></div>
+                                                        </div>
+                                                </div>
+
+        
+                                </div>
+
+                        </div>
+                        
+
+                        <!--******************************Fifth: flex__Card******************************-->
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card ReWrite__Height ">
+                                                <div class="Firtstflex__card">
+                                                        <img class="d-block w-100" src="images/humidityIcon.png">
+                                                              
+                                                        <div class="flex__Column">
+                                                                <h4>رطوبت محیط</h4>
+                                                                <div>Humidity</div>
+                                                        </div>
+                                                        <div class="Number_Size"><b>90%</b></div>
+                                                                
+                                                </div>
+                
+                                                 <!-- **************Row*************** -->
+                
+                                                <div class="Thirdflex__Text">
+                                                      <!-- جهت اینکه با بقیه ارتفاع یکسان شود این تگ اضافه شد. -->
+                
+                                                </div>
+                
+                                                 <!-- **************Row*************** -->
+                
+                                                <div class="flex__Rate">
+                                                        <div class="block__Rate">  
+                                                                <div class="Humidity Light"></div>
+                                                                <div class="Humidity Green"></div>
+                                                                <div class="Humidity Green"></div>
+                                                                <div class="Humidity Green"></div>
+                                                                <div class="Humidity Green"></div>
+                                                                <div class="Humidity Orange"></div>
+                                                                <div class="Humidity Orange"></div>
+                                                                <div class="Humidity Orange"></div>
+                                                                <div class="Humidity Pink"></div>
+                                                                <div class="Humidity Pink"></div>
+                                                        </div>
+                                                </div>
+        
+                                </div>
+
+                        </div>
+                       
+
+                        <!--******************************Sixth: flex__Card******************************-->
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card inner__First" >
+                                
+                                                <div class="Firtstflex__card">
+                                                        <img class="d-block w-100" src="images/saltIcon.png">
+                                                               
+                                                        <div class="flex__Column">
+                                                                <h4>شوری خاک</h4>
+                                                                <div>salt</div>
+                                                        </div>
+                                                        <div class="Number_Size"><b>240</b><span>EC</span></div>
+                                                                
+                                                </div>
+                
+        
+                                </div>
+                                <div class="flex__Card inner__Second">
+                                     
+                                                <div class="Firtstflex__card">
+                                                       <img class="d-block w-100" src="images/versionIcon.png">          
+                                                        
+                                                        <div class="flex__Column">
+                                                                <h4>ورژن</h4>
+                                                                <div>Version</div>
+                                                        </div>
+
+                                                        <div class="Thirdflex__Text  Margin">
+                                                                
+                                                                <div class="Circle Battery__Circle"></div>     
+                                                                <div class="lightText">عدم تغییر ورژن</div>
+                                                               
+                                                        </div>
+                                                   
+                                                              
+                                                                
+                                                </div>
+                                                
+        
+        
+                                </div>
+
+                        </div>
+                        
+                        
+                        <!--******************************Seventh: flex__Card******************************-->
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card ReWrite__Height">
+                           
+                                                <div class="Firtstflex__card">
+                                                       <img class="d-block w-100" src="images/waterIcon.png">
+                                                                 
+                                                        
+                                                        <div class="flex__Column">
+                                                                <h4>سطح آب</h4>
+                                                                <div>water level</div>
+                                                        </div>
+                                                        <div class="Number_Size"><b>10%</b></div>
+                                                                
+                                                </div>
+        
+                                                 <!-- **************Row*************** -->
+        
+                                                <div class="Thirdflex__Text">
+                                                        <div class="Circle Battery__Circle"></div>
+                                                        <div class="Battery__Text"><b>سطح آب مخزن کاهش یافته است</b></div>
+                                                        
+                                                </div>
+        
+                
+                                                <!-- **************Row*************** -->
+        
+                                                <div class="flex__Rate">
+                                                        <div class="block__Rate">  
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Light"></div>
+                                                                <div class="Rectangle Pink"></div>
+                                                        </div>
+                                                </div>       
+                                </div>
+                        </div>
+
+                        <!--******************************Eighth: flex__Card******************************-->
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card ReWrite__Height">
+                                    
+                                                <div class="Firtstflex__card">
+                                                      <img class="d-block w-100" src="images/windowIcon.png">
+                                                                 
+                                                        
+                                                        <div class="flex__Column">
+                                                                <h4>پنجره</h4>
+                                                                <div>Window</div>
+                                                        </div>
+                                                        <div class="Number_Size"><b>15%</b></div>
+                                                                
+                                                </div>
+                                                 <!-- **************Row*************** -->
+                
+                                                 <div class="Thirdflex__Text">
+                                                        <!-- جهت اینکه با بقیه ارتفاع یکسان شود این تگ اضافه شد. -->
+                  
+                                                  </div>
+        
+                                                 <!-- **************Row*************** -->
+        
+                                                 <div class="flex__Device Window">
+                                                       <!-- غیر فعال گردد Window__Rating نمودار در این تگ وارد شود و کلاس -->
+                                                        <div class="Window__Rating">
+                                                                <div class="inner__WindowRating">
+
+                                                                </div>
+                                                        </div>
+                                                                
+                                                        <div class="window__Button">اعمال</div>
+        
+                                                </div>
+                                </div>
+                                
+                        </div>
+
+                        <!--******************************Nineth: flex__Card******************************-->
+
+                        <div class="flex__TupleCard">
+                                <div class="flex__Card inner__First SameHeight">
+                                  
+                                                <div class="Firtstflex__card">
+                                                        <img class="d-block w-100" src="images/dorIcon.png">
+                                                        
+                                                        
+                                                        <div class="flex__Column">
+                                                                <h4>درب</h4>
+                                                                <div>Dor</div>
+                                                        </div>
+        
+                                                        <div class="Dor__sُituation">
+                                                                <h4>وضعیت</h4>
+        
+                                                                <div class="flex__Device Dor">
+                                                                        <div  class="blockBT BoxDor">
+                                                                                <div class="blockBT__active Wide">باز</div>
+                                                                                <div class="blockBT__deactive lightColor">بسته</div>  
+                                                                        </div>
+                                                                 </div>
+                                                        </div>
+                                                                               
+                                                </div>               
+                                </div>
+
+                                  <!--******************************Tenth: flex__Card******************************-->
+
+                         <div class="flex__Card inner__Second DisplayNone">
+                           
+                                        <div class="Firtstflex__card ">
+                                                <img class="d-block w-100" src="images/humanIcon.png">
+                                                                 
+                                                <div class="flex__Column Human__Recognize ">
+                                                        <h4>تشخیص حضور انسان</h4>
+                                                        <div>Recognize human Presence</div>
+                                                </div>         
+                                        </div>               
+                        </div>
+
+
+                        </div>
+        
+                        
+
+                         <!--******************************Eleventh: flex__Card for responisive******************************-->
+
+
+
+                        <div class="flex__TupleCard Display">
+                             
+                         <div class="flex__Card inner__First">
+                           
+                                        <div class="Firtstflex__card ">
+                                                <img class="d-block w-100" src="images/humanIcon.png">   
+                                                
+                                                <div class="flex__Column Human__Recognize ">
+                                                        <h4>تشخیص حضور انسان</h4>
+                                                        <div>Recognize human Presence</div>
+                                                </div>         
+                                        </div>               
+                        </div>
+        
+                        </div>
+
+                         </div>
+
+                </div>
+
+        </div>
+
+       
+      
+        
+</body>
+</html>
